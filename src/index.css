@@ -1,0 +1,169 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+  html{
+    font-family:"Montserrat";
+    scroll-behavior:smooth;
+  }
+  .animationToRight{
+    animation:toRight 5s ease-in-out infinite alternate;
+    animation-delay:1.8s;
+    position:relative; 
+  }
+  .animationToRight:before{
+    content:"";
+    left:-100%;
+    width:120%;
+    position: absolute;
+    height:100%;
+    background-image: linear-gradient(to right, rgba(0,0,0,0), #10565A);
+    display:block;
+  }
+
+  .animationToRight:after{
+    content:"";
+    left:100%;
+    width:120%;
+    position: absolute;
+    height:100%;
+    background-image: linear-gradient(to left, rgba(0,0,0,0), #10565A);
+    display:block;
+  }
+
+  .animationToLeft{
+    animation:toLeft 5s ease-in-out infinite alternate;
+    animation-delay:2s;
+    position:relative; 
+  }
+  .animationToLeft:before{
+    content:"";
+    left:-100%;
+    width:120%;
+    position: absolute;
+    height:100%;
+    background-image: linear-gradient(to right, rgba(0,0,0,0), #10565A);
+    display:block;
+  }
+
+  .animationToLeft:after{
+    content:"";
+    left:100%;
+    width:120%;
+    position: absolute;
+    height:100%;
+    background-image: linear-gradient(to left, rgba(0,0,0,0), #10565A);
+    display:block;
+  }
+  
+  .animationToTop:after{
+    content:"";
+    top:100%;
+    width:100%;
+    position: absolute;
+    height:120%;
+    background-image: linear-gradient(to top, rgba(0,0,0,0), #10565A);
+    display:block;
+  }
+.animationToTop:before{
+    content:"";
+    bottom:100%;
+    width:100%;
+    position: absolute;
+    height:120%;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0), #10565A);
+    display:block;
+  }
+
+  .animationToTop{
+    animation:toTop 5s ease-in-out infinite alternate;
+    animation-delay:2s;
+    position: relative;
+  }
+  .animationToBottom:after{
+    content:"";
+    top:100%;
+    width:100%;
+    position: absolute;
+    height:120%;
+    background-image: linear-gradient(to top, rgba(0,0,0,0), #10565A);
+    display:block;
+  }
+.animationToBottom:before{
+    content:"";
+    bottom:100%;
+    width:100%;
+    position: absolute;
+    height:120%;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0), #10565A);
+    display:block;
+  }
+
+  .animationToBottom{
+    animation:toBottom 5s ease-in-out infinite alternate;
+    animation-delay:2s;
+    position: relative;
+  }
+
+
+
+  .link{
+    position:relative;
+  }
+  .link:after{
+    content:"";
+    width:0;
+    height:2px;
+    left:50%;
+    background:#10565a;
+    display:block;
+    position:absolute;
+    transition: all ease-in-out .2s;
+  }
+  .link:hover:after{
+    width:100%;
+    left:0;
+  }
+
+
+
+
+  @keyframes toTop{
+    0%{
+      bottom:0;
+    }
+    100%{
+      bottom:100%;
+    }
+  }
+  @keyframes toBottom{
+    0%{
+      top:0;
+    }
+    100%{
+      top:100%;
+    }
+  }
+
+
+  @keyframes toLeft{
+    0%{
+      left:100%;
+    }
+    100%{
+      left:0%;
+    }
+  }
+
+  @keyframes toRight{
+    0%{
+      left:0%;
+    }
+    100%{
+      left:100%;
+    }
+  }
+}
+
+
