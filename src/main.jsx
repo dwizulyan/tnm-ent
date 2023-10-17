@@ -20,7 +20,7 @@ import "@fontsource/montserrat/900.css";
 
 const router = createBrowserRouter([
   {
-    path:"/tnm-ent/*",
+    path:"/tnm-ent/",
     element:<App/>,
     errorElement:<Error/>,
   },
