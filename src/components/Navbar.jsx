@@ -18,14 +18,15 @@ const Navbar = () => {
           data-aos-delay={500}
           icon={faBars} 
           className="text-plain text-2xl lg:hidden"/>
-        <h1 
+        <Link
+          to="/tnm-ent/"
           data-aos-once="true"
           data-aos="fade-down" 
-          className="text-plain font-black text-2xl hover:cursor-pointer">TNM</h1>
+          className="text-plain font-black text-2xl hover:cursor-pointer">TNM</Link>
       </div>
       <div className={isActive ? (`w-full justify-center z-[-1] items-center lg:w-[35%] absolute h-screen bg-accent lg:bg-transparent lg:relative left-0 top-0 lg:h-full flex gap-16 lg:left-0 text-3xl lg:flex-row flex-col lg:text-base transition-all lg:justify-between lg:items-center`):(`w-full justify-center z-[-1] items-center lg:w-[35%] absolute h-screen bg-accent lg:bg-transparent lg:relative left-[-100%] top-0 lg:h-full lg:left-0 flex gap-16 text-3xl lg:flex-row flex-col lg:text-base transition-all lg:justify-between lg:items-center`)}>
         <HashLink
-          to="#about"
+          to="/tnm-ent/#about"
           onClick={()=>{
             setIsActive(false)
           }}
@@ -36,7 +37,7 @@ const Navbar = () => {
           About
         </HashLink>
         <HashLink 
-          to="#ourteam"
+          to="/tnm-ent/#ourteam"
           onClick={()=>{
             setIsActive(false)
           }}
@@ -47,7 +48,7 @@ const Navbar = () => {
           Team
         </HashLink>
         <HashLink
-          to="#content"
+          to="/tnm-ent/#content"
           onClick={()=>{
             setIsActive(false)
           }}
@@ -58,7 +59,7 @@ const Navbar = () => {
           Content
         </HashLink>
         <HashLink
-          to="#social"
+          to="/tnm-ent/#social"
           onClick={()=>{
             setIsActive(false)
           }}
