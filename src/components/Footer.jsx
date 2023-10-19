@@ -14,13 +14,13 @@ const Footer = () => {
           <a 
             href="https://www.tnmbounty.rf.gd"
             className="text-plain font-medium hover:text-accent w-max transition-all">
-            TNM Bounty List (Credit to fatkur)
+            TNM Bounty List
           </a>
           <a 
             href="https://open.spotify.com/show/3b7XhrvVHPyqX8lc0pHgwY" 
             className="text-plain font-medium hover:text-accent w-max transition-all">Lunatic Podcast</a>
           <a 
-            href="https://open.spotify.com/show/3b7XhrvVHPyqX8lc0pHgwY" 
+            href="https://tnmceritaseram.rf.gd/?i=1" 
             className="text-plain font-medium hover:text-accent w-max transition-all">Cerita Serem</a>
           
         </div>
