@@ -14,17 +14,19 @@ const Footer = () => {
           <a 
             href="https://www.tnmbounty.rf.gd"
             className="text-plain font-medium hover:text-accent w-max transition-all">
-            TNM Bounty List (Credit to faktur)
+            TNM Bounty List (Credit to fatkur)
           </a>
           <a 
             href="https://open.spotify.com/show/3b7XhrvVHPyqX8lc0pHgwY" 
             className="text-plain font-medium hover:text-accent w-max transition-all">Lunatic Podcast</a>
-          <a href="/tnm-ent/good-stuff" className="text-plain font-medium hover:text-accent transition-all">Good Stuff</a>
+          <a 
+            href="https://open.spotify.com/show/3b7XhrvVHPyqX8lc0pHgwY" 
+            className="text-plain font-medium hover:text-accent w-max transition-all">Cerita Serem</a>
+          
         </div>
       </div>
       <div className="w-full absolute left-0 bottom-0 p-5 lg:px-20">
         <h1 className="text-plain">Created by @illmindofdwi_</h1>
-        <p className="text-plain">Thanks for visiting boii, btw give me a feedback lah, <Link to="/tnm-ent/feedback" className="text-accent underline">di sini</Link></p>
       </div>
     </div>
   );
